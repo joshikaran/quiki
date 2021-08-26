@@ -1,0 +1,263 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: rgb(238, 238, 238);
+}
+h1{ 
+    text-transform:initial;
+    display: block;
+    width: 5%;
+    color:white;
+    text-shadow: 4px 4px 3px rgb(18, 0, 121);
+    padding:0% 7%;
+   font: small-caps 35px cursive;    
+}
+.header{
+    background-image: linear-gradient(to bottom right,rgb(255, 34, 145),rgb(252, 250, 171),rgb(255, 237, 102));
+    width: 100%;
+    background-color: white;
+    height: 2cm;
+}
+.profile_pic{
+    float: right;
+    font-size: 25px;
+    color:rgb(66, 66, 66);
+    position:absolute;
+    top:35px;
+    right:3%;
+}
+.friends{
+    color:rgb(65, 64, 64);
+    position:absolute;
+    top: 35px;
+    right:15%;
+    font-size: 22px;
+    padding:6px;
+    border: none;
+    background:transparent;
+}
+.notifications{
+    color:rgb(65, 64, 64);
+    position:absolute;
+    top: 35px;
+    right:10%;
+    font-size: 22px;
+    padding:6px;
+}
+.search{
+    position: relative;
+    bottom:5px;
+    left: 49%; 
+}
+button,input[type="text"]{
+    position:relative;
+    border-radius: 7px;
+    font-size: 14px;
+    padding: 2px 7px;
+    border:1px solid gainsboro
+}
+button{
+    width:40px;
+    border: 1px solid rgb(143, 143, 143);
+}
+input[type="text"]{
+    width: 150px;
+}
+button:hover{
+    color:white;
+    background-color: gray;
+}
+.friends:hover,.notifications:hover,.profile_pic:hover{  
+    color:rgb(121, 3, 3);
+    background:transparent;
+}
+.body{
+    display:flex;
+    margin:0 ;
+    position: relative;
+}
+.main{
+    float: left;
+    width: 50%;
+    height:auto;    
+    margin:0 5%;
+    border-radius: 5px;
+}
+.post-container{
+    width:100%;
+     background-color: rgb(255, 255, 255);
+     border-radius: 6px;
+}
+.user-info,.suggest{
+    display: flex;
+    width:94%;   
+    margin: 3% 3%;
+    padding-top: 20px;
+   
+}
+.user-info img,.suggest img{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 14px;
+}
+.user-profile,.suggest-info{
+    display: flex;
+    width: 100%;
+    font-size: 17px;
+    justify-content: space-between;
+}
+.post-img{
+    width: 97%;
+    margin-left:2%;
+    border: 1px solid rgb(243, 240, 240);
+}
+.post-react{
+    font-size: 20px;
+    padding:10px;
+}
+.post-react a{
+    margin:2% 5%
+}
+textarea{
+    margin:1% 5%;
+    width: 80%;
+    padding:4px;
+    padding-bottom: 10px;
+    border:none;
+    border-bottom: 1px solid grey;
+}
+.comment{
+    display: flex;
+    margin: 0 18px;
+}
+.comment > p{
+    font-size: x-large;
+    position: relative;
+    color:rgb(85, 119, 243);
+    right: 10px;
+    top: 5px;
+    height: 35px;
+}
+.comment > p:hover{
+    color:rgb(35, 110, 250)
+}
+.right{
+    float: left;
+    width:30%;
+    margin:1% 5%;
+    border-radius: 5px;
+}
+.cont1,.cont2{
+    border: 1px solid gainsboro;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    padding:15px ;
+}
+.event{
+    display:flex;
+    padding:15px;
+}
+.left-event{
+   width: 60px;
+   height:60px;
+   text-align: center;
+   margin:1px 15px 0px 4px;
+   border-radius: 6px;
+   padding:6px 3px 0px 3px;
+   box-shadow: 0 0 6px lightsteelblue;
+   border:solid black;
+}
+.suggestions h3{
+    font-weight: normal;
+}
+.suggest{
+    margin:1px 0;
+}
+.suggest-info{
+    border-bottom: 1px solid gray;
+  padding:2px 0;
+}
+.friends-box,.notification-box,.profile-box{
+    width: 17%;
+    height:auto;
+    background-color: rgb(255, 255, 255);
+    border-radius:5px;
+    padding:5px 10px 15px 10px;
+}
+.frnd,.group{
+    height:117px;
+    font-weight: normal;
+    padding:10px;
+   }
+.frnd{
+    border-bottom: 1px solid gainsboro;
+}
+.frnd h3,.group h3{
+    margin-bottom: 15px;
+}
+.friends-box{display: none;
+     position:absolute;
+    top:2.1cm;
+    right:10%;
+    z-index: 1;
+    box-shadow: 0 0 10px black;
+}
+.notification-box{
+    display: none;
+    position:absolute;
+    top:2.1cm;
+    right:5%;
+    z-index: 1;
+    box-shadow: 0 0 10px black;
+}
+.profile,.setting{
+    display: flex;
+    margin: 5px;
+    font-size: 17px;
+   border-bottom: 1px solid rgb(226, 225, 225);
+   padding-top: 10px;
+    padding-bottom: 10px;
+}
+.setting4{
+    display: flex;
+    margin: 5px;
+    font-size: 17px;
+    padding-bottom: 35px;
+    border:none;
+}
+.profile > p{ 
+    font-size: 32px;
+}
+.profile-link,.privacy{
+    margin:0 5px;
+}
+.setting > p,.feedback > p{
+    font-size: 20px;
+}
+.feedback{
+    display: flex;
+    margin:4px 0;
+    padding-top:25px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    border-top: 1px solid black;
+}
+.feedback1{
+     margin:0 7px;
+}
+.profile-box{
+   display:none;
+    position:absolute;
+    top:2.1cm;
+    right:1%;
+    z-index: 1;
+    box-shadow: 0 0 10px black;
+}
